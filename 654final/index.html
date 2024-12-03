@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    <title>Homepage</title>
+    <meta name="description" content="Final Project Homepage">
+    <meta name="keywords" content="HTML,CSS,webpage">
+    <meta name="author" content="Alexa Jade Frankelis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <h1>Global Museum Gateway: Curated Digital Exhibitions for All</h1>
+            <a class="active" href=index.html>Home</a>
+            <a href=about.html>About</a>
+            <a href=.html>Alexis's page</a>
+            <a href=.html>Ramona's page</a>
+            <a href=.html>Tyler's page</a>
+            <a href=.html>Emily's Page</a>
+        </div>
+    </header>
+
+    <div class="centerbody">
+        <h2>What's On View</h2>
+        <p>Our curated digital exhibitions bring diverse facets of visual culture to life, 
+            offering audiences an engaging exploration of art, film, and photography through 
+            the lens of historical and cultural contexts.</p>
+      </div>
+      
+      <!-- gallery -->
+      <div class="row">
+        <div class="column">
+          <img src="./images/img_nature.jpg" alt="Exhibit 1: Modern Art in Motion" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/img_snow.jpg" alt="Exhibit 2: Cinema at War" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/img_mountains.jpg" alt="Exhibit 3: Shtetl Visions" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="./images/img_woman.jpg" alt="Exhibit 4: Visuals of the Occult" onclick="myFunction(this);">
+        </div>
+      </div>
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg">
+        <div id="imgtext"></div>
+      </div>
+      
+      <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+
+<div class="content">
+    <h2>Exhibits Overview</h2>
+    <p>Each exhibit combines artistic excellence with rich historical narratives, 
+        providing an educational and immersive experience for all.</p>
+     <ol>
+        <li><a href="https://www.linkedin.com/in/alexa-jade-frankelis/">Modern Art in Motion, By: Emily Drachman</a>
+            <ul>
+                <li>This exhibit delves into the revolutionary art movements of the early 20th century, 
+                    including Futurism, Dada, and others from 1900 to 1930. 
+                    Visitors will uncover how these avant-garde movements emerged as a response to societal 
+                    upheavals and technological advancements of the time, reflecting the zeitgeist in a dynamic 
+                    visual language that continues to influence contemporary art.</li>
+            </ul>
+        </li>
+        <li><a href="https://www.linkedin.com/in/alexa-jade-frankelis/">Cinema at War, By: Tyler Capo</a>
+            <ul>
+                <li>Experience the global cinematic landscape during World War II through this exhibit. By juxtaposing 
+                    propaganda films with entertainment features across various cultures, it reveals how different 
+                    nations used motion pictures to rally spirits, convey ideologies, and provide escapism in times 
+                    of turmoil. From American war dramas to Japanese propaganda, the exhibit provides a comparative 
+                    perspective on storytelling in the shadow of conflict.
+            </ul>
+        </li>
+        <li><a href="https://www.linkedin.com/in/alexa-jade-frankelis/">Shtetl Visions, By: Ramona Saft</a>    
+            <ul>
+                <li>Explore the intimate and poignant depiction of shtetl life in the visual arts of Eastern European 
+                    Jewelry during the 19th and 20th centuries. This exhibit highlights the vibrant yet often-overlooked 
+                    cultural heritage of Jewish communities, presenting artworks that document and celebrate the traditions, 
+                    challenges, and resilience of shtetl existence. </li>
+            </ul>
+        </li>
+        <li><a href="https://www.linkedin.com/in/alexa-jade-frankelis/">Visuals of The Occult, By: Alexa Jade Frankelis</a>
+            <ul>
+                <li> Journey into the mysterious realm of occult photography from the 19th to early 20th century. This exhibit 
+                    examines the interplay between spiritualism, mysticism, and visual culture, showcasing rare photographic 
+                    collections that capture the era’s fascination with the supernatural and unseen forces.</li>
+            </ul>
+        </li>
+    </ol>
+</div>
+
+      
+    <footer id="footer">
+        <p>&copy; Alexa Jade Frankelis, 2024</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+    </footer>
+    </body>
+    </html>
