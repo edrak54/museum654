@@ -27,82 +27,50 @@
         <h2>What's On View</h2>
         <p>Our curated digital exhibitions bring diverse facets of visual culture to life, 
             offering audiences an engaging exploration of art, film, and photography through 
-            the lens of historical and cultural contexts.</p>
+            the lens of historical and cultural contexts. Each exhibit combines artistic excellence with rich historical narratives, 
+        providing an educational and immersive experience for all.</p>
       </div>
       
-      <!-- gallery -->
-      <div class="row">
-      </div>
-        <div class="column">
-          <img src="./images/dynamismDog.jpg" alt="Exhibit 1: Modern Art in Motion" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="./images/img_snow.jpg" alt="Exhibit 2: Cinema at War" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="./images/img_mountains.jpg" alt="Exhibit 3: Shtetl Visions" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="./images/img_woman.jpg" alt="Exhibit 4: Visuals of the Occult" style="width:100%" onclick="myFunction(this);">
-        </div>
-    
-    
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img src id="expandedImg" style="width:100%" alt="none">
-  <div id="imgtext"></div>
-</div>
-
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
-
-<div class="content">
-    <h2>Exhibits Overview</h2>
-    <p>Each exhibit combines artistic excellence with rich historical narratives, 
-        providing an educational and immersive experience for all.</p>
-     <ol>
-        <li><a href="exhibit1.html">Modern Art in Motion, By: Emily Drachman</a>
-            <ul>
-                <li>This exhibit delves into the revolutionary art movements of the early 20th century, 
+   <div class="gallery">
+  <a target="_blank" href="./images/dynamismDog.jpg">
+    <img src=",/images/dynamismDog.jpg" alt="Exhibit 1: Modern Art in Motion" width="600" height="400">
+  </a>
+  <div class="desc">This exhibit delves into the revolutionary art movements of the early 20th century, 
                     including Futurism, Dada, and others from 1900 to 1930. 
                     Visitors will uncover how these avant-garde movements emerged as a response to societal 
                     upheavals and technological advancements of the time, reflecting the zeitgeist in a dynamic 
-                    visual language that continues to influence contemporary art.</li>
-            </ul>
-        </li>
-        <li><a href="https://www.linkedin.com/in/alexa-jade-frankelis/">Cinema at War, By: Tyler Capo</a>
-            <ul>
-                <li>Experience the global cinematic landscape during World War II through this exhibit. By juxtaposing 
+                    visual language that continues to influence contemporary art.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/img_snow.jpg">
+    <img src="./images/img_snow.jpg" alt="Exhibit 2: Cinema at War" width="600" height="400">
+  </a>
+  <div class="desc">Experience the global cinematic landscape during World War II through this exhibit. By juxtaposing 
                     propaganda films with entertainment features across various cultures, it reveals how different 
                     nations used motion pictures to rally spirits, convey ideologies, and provide escapism in times 
                     of turmoil. From American war dramas to Japanese propaganda, the exhibit provides a comparative 
-                    perspective on storytelling in the shadow of conflict.
-            </ul>
-        </li>
-        <li><a href="ramonasexhibit.html">Envisioning the Shtetls, By: Ramona Saft</a>    
-            <ul>
-                <li>Explore the intimate and poignant depiction of shtetl life in the visual arts of Eastern European 
+                    perspective on storytelling in the shadow of conflict. </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="./images/img_mountains.jpg">
+    <img src="./images/img_mountains.jpg" alt="Envisioning the Shtetl" width="600" height="400">
+  </a>
+  <div class="desc">Explore the intimate and poignant depiction of shtetl life in the visual arts of Eastern European 
                     Jewelry during the 19th and 20th centuries. This exhibit highlights the vibrant yet often-overlooked 
                     cultural heritage of Jewish communities, presenting artworks that document and celebrate the traditions, 
-                    challenges, and resilience of shtetl existence. </li>
-            </ul>
-        </li>
-        <li><a href="exhibit4.html">Visuals of The Occult, By: Alexa Jade Frankelis</a>
-            <ul>
-                <li> Journey into the mysterious realm of occult photography from the 19th to early 20th century. This exhibit 
-                    examines the interplay between spiritualism, mysticism, and visual culture, showcasing rare photographic 
-                    collections that capture the era’s fascination with the supernatural and unseen forces.</li>
-            </ul>
-        </li>
-    </ol>
+                    challenges, and resilience of shtetl existencee</div>
 </div>
+    
+<div class="gallery">
+  <a target="_blank" href="./images/img_woman.jpg">
+    <img src="./images/img_woman.jpg" alt="Visuals of The Occult" width="600" height="400">
+  </a>
+  <div class="desc">Journey into the mysterious realm of occult photography from the 19th to early 20th century. This exhibit 
+                    examines the interplay between spiritualism, mysticism, and visual culture, showcasing rare photographic 
+                    collections that capture the era’s fascination with the supernatural and unseen forces.</div>
+</div> 
 
       
     <footer>
