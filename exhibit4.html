@@ -25,13 +25,7 @@
     </body>
     </header>
 
-    <div style="text-align:center">
-        <h2>Exhibit 4: Visuals of The Occult</h2>
-        <h3> By: Alexa Jade Frankelis</h3>
-        <p>Our curated digital exhibitions bring diverse facets of visual culture to life, 
-            offering audiences an engaging exploration of art, film, and photography through 
-            the lens of historical and cultural contexts.</p>
-      </div>
+
       <div class="content">
         <h2>Exhibit 4: Visuals of The Occult</h2>
         <h3> By: Alexa Jade Frankelis</h3>
@@ -68,7 +62,6 @@
         console.error(error);
         return null;
       }
-    }
     
     // Array of Object IDs
     const objectIDs = [285734, 302466, 283105, 271509];
@@ -87,11 +80,9 @@
           img.src = data.primaryImage;
           img.alt = data.title;
           img.style.width = "300px";
+          img.position = relative; 
           document.body.appendChild(img);
         }
-      }
-    });
-    
 </script>
 
 
