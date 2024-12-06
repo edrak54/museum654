@@ -35,6 +35,10 @@ h1.navigation {
         color: white
     }
 
+.centerbody{
+    text-align: center;
+}
+
 /* image grid css */
 {
   box-sizing: border-box;
