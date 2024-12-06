@@ -1,0 +1,104 @@
+*{
+    background-color: #FFFDDF;
+}
+
+h2{
+    text-align: center;
+    border: black;
+    font-family: 'Garamond', serif;
+    padding: 10px;
+    
+}
+.navigation {
+        border-bottom: solid rgb(131, 0, 0);
+        overflow: hidden;
+        font-family: 'Garamond', serif;
+        
+    }
+
+h1.navigation {
+    text-align: center;
+    font-size: 48px;
+    }
+
+.navigation a {
+        float: left;
+        text-align: center;
+        padding: 10px;
+        color: rgb(151, 0, 0);
+    }
+.navigation a:hover {
+        background-color: grey;
+        color: black;
+    }
+.navigation a.active {
+        background-color: rgb(131, 0, 0);
+        color: white
+    }
+
+.centerbody{
+    text-align: center;
+}
+
+.content{
+     text-align: center;
+    padding-top: 20px;
+
+}
+  
+  .body {
+    font-family: 'Garamond', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000000;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  .data-container {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
+  .data-container p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .object-info {
+    margin-bottom: 20px;
+  }
+  
+  .object-info h3 {
+    font-size: 1.25rem;
+    color: #333;
+  }
