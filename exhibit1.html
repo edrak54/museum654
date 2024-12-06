@@ -50,6 +50,22 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
+                .game {
+                    margin: 5px 10%;
+                    padding: 5px;
+                    text-align: center;
+                    background-color: gray;
+                    border-radius: 35px;
+                }
+                .game img {
+                    max-width: 70%;
+                }
+                button {
+                    padding: 8px;
+                    border-radius: 40px;
+                    margin: 5px 10px;
+                    border: none;
+                }
             </style>
         <div class="navigation">
             <h1>Global Museum Gateway: Curated Digital Exhibitions for All</h1>
@@ -61,14 +77,16 @@
             <a class="active" href=exhibit1.html>Modern Art in Motion</a>
         </div>
         <h1>Modern Art in Motion</h1>
+        <h4>by Emily Drachman</h4>
         <p>Futurism and Dada are both movements that are part of early modernism, specifically around the years of World War One. 
             Futurism took place largely in Italy just before the start of the war while Dada began just after the war. 
             Both groups were reacting to their circumstances in very different cultures despite such close temporal proximity. 
             The Futurists, in an attempt to move past the classical history that was so revered in Italy, were all in on new 
             technology and industry. The Futurists sought to glorify war in contrast to the Dada artists, working after the onset 
             of WWI who were reacting to very real horrors that had previously been unimaginable. Dada is a reaction to a world 
-            which did not make much sense and thus often includes nonsensical elements in their work. Both groups bring a 
-            distinct and important perspective to understanding the time period during which they were working.</p>
+            which did not make much sense and thus often includes nonsensical elements in their work. Both groups push against 
+            norms and seek to disrupt accepted systems. Each brings a distinct and important perspective to understanding the 
+            time period during which they were working.</p>
   
         <div class="row">
             <div class="column">
@@ -171,6 +189,46 @@
             </div>
         </div>
 
+        <div class="game">
+            <h2>Test Your Knowledge</h2>
+            <h3>Futurism or Dada?</h3>
+            <button id="start" onclick="start()">Show/Hide Questions</button>
+            <div id="questions">
+            <div class="row">
+                <div id="q1" class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Gino_Severini%2C_1912%2C_Dancer_at_Pigalle%2C_oil_and_sequins_on_sculpted_gesso_on_artist%27s_canvasboard%2C_69.2_x_49.8_cm%2C_Baltimore_Museum_of_Art.jpg/843px-Gino_Severini%2C_1912%2C_Dancer_at_Pigalle%2C_oil_and_sequins_on_sculpted_gesso_on_artist%27s_canvasboard%2C_69.2_x_49.8_cm%2C_Baltimore_Museum_of_Art.jpg?20150613045402" alt="">
+                    <p>Is this work Futurism or Dada?</p>
+                    <button onclick="correct1()">Futurism</button><button onclick="incorrect1()">Dada</button>
+                    <h4 id="response1"></h4>
+                    <p id="answer1"></p>
+                </div>
+                <div id="q2" class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/d8/ConstructedbyMinimaxDadamax.jpg?20221107210737" alt="">
+                    <p>Is this work Futurism or Dada?</p>
+                    <button onclick="incorrect2()">Futurism</button><button onclick="correct2()">Dada</button>
+                    <h4 id="response2"></h4>
+                    <p id="answer2"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="q3" class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Funeraloftheanarchistgalli.jpg/1554px-Funeraloftheanarchistgalli.jpg?20201218193514" alt="">
+                    <p>Is this work Futurism or Dada?</p>
+                    <button onclick="correct3()">Futurism</button><button onclick="incorrect3()">Dada</button>
+                    <h4 id="response3"></h4>
+                    <p id="answer3"></p>
+                </div>
+                <div id="q4" class="column">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ABCD-Hausmann.jpg/842px-ABCD-Hausmann.jpg?20240819081323" alt="">
+                    <p>Is this work Futurism or Dada?</p>
+                    <button onclick="incorrect4()">Futurism</button><button onclick="correct4()">Dada</button>
+                    <h4 id="response4"></h4>
+                    <p id="answer4"></p>
+                </div>
+            </div> 
+            </div>
+        </div>
+
         <div>
             <h2>Further Reading and Sources</h2>
             <ul>
@@ -234,10 +292,52 @@
                     duchamp.style.display = "none";
                 }
             }
+
+            var questions = document.getElementById("questions");
+            questions.style.display = "none";
+            function start() {
+                if (questions.style.display === "none") {
+                    questions.style.display = "block";
+                } else {
+                    questions.style.display = "none";
+                }
+            }
+            function correct1() {
+                document.getElementById("response1").innerHTML = "That's Right!";
+                document.getElementById("answer1").innerHTML = "This work is <i>Dancer at Pigalle</i>, 1912, by Futurist artist Gino Severini.";
+            }
+            function incorrect1() {
+                document.getElementById("response1").innerHTML = "Incorrect, Try Again."
+            }
+
+            function correct2() {
+                document.getElementById("response2").innerHTML = "That's Right!";
+                document.getElementById("answer2").innerHTML = "This work is <i>Little Machine Constructed by Minimax Dadamax in Person</i>, 1919-20, by Dada artist Max Ernst.";
+            }
+            function incorrect2() {
+                document.getElementById("response2").innerHTML = "Incorrect, Try Again."
+            }
+
+            function correct3() {
+                document.getElementById("response3").innerHTML = "That's Right!";
+                document.getElementById("answer3").innerHTML = "This work is <i>The Funeral of the Anarchist Galli</i>, 1911, by Futurist artist Carlo Carrà.";
+            }
+            function incorrect3() {
+                document.getElementById("response3").innerHTML = "Incorrect, Try Again."
+            }
+
+            function correct4() {
+                document.getElementById("response4").innerHTML = "That's Right!";
+                document.getElementById("answer4").innerHTML = "This work is <i>ABCD (Self-portrait)</i>, 1923-24, by Dada artist Raoul Hausmann.";
+            }
+            function incorrect4() {
+                document.getElementById("response4").innerHTML = "Incorrect, Try Again."
+            }
+            
         </script>
 
         <footer>
-            <p>© Global Museum Gateway, 2024</p>
+            <p>© Global Museum Gateway, 2024 | Images on this page are under public domain and used under fair use for educational purposes.</p>
         </footer>
     </body>
 </html>
