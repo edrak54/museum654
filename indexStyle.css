@@ -44,22 +44,20 @@ h1.navigation {
     padding-top: 300px;
 }
 
-/* image grid css */
-{
+* {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Arial;
 }
-
 
 .column {
   float: left;
   width: 25%;
   padding: 10px;
 }
-
 
 .column img {
   opacity: 0.8; 
@@ -70,25 +68,22 @@ body {
   opacity: 1;
 }
 
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
 .container {
   position: relative;
   display: none;
 }
 
-
 #imgtext {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  color: black;
+  color: white;
   font-size: 20px;
 }
 
@@ -96,9 +91,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  color: black;
+  color: white;
   font-size: 35px;
   cursor: pointer;
 }
-
-
