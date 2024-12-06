@@ -44,16 +44,6 @@ h1.navigation {
     padding-top: 300px;
 }
 
-/* List Styles */
-ul, ol {
-    margin-left: 20px;
-    padding-left: 10px;
-    text-align: left;
-}
-
-ul li, ol li {
-    margin-bottom: 5px;
-    text-align: left;
 /* image grid css */
 {
   box-sizing: border-box;
