@@ -48,12 +48,12 @@ h1.navigation {
 ul, ol {
     margin-left: 20px;
     padding-left: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 ul li, ol li {
     margin-bottom: 5px;
-    text-align: center;
+    text-align: left;
 /* image grid css */
 {
   box-sizing: border-box;
