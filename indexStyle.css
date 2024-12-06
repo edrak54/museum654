@@ -1,0 +1,52 @@
+*{
+    background-color: #FFFDDF;
+}
+img{
+    width: 300px;
+    float: inline-start;
+    padding-left: 130px;
+}
+h2{
+    text-align: center;
+    border: black;
+    font-family: 'Garamond', serif;
+    
+}
+.navigation {
+        border-bottom: solid rgb(131, 0, 0);
+        overflow: hidden;
+        font-family: 'Garamond', serif;
+        
+    }
+
+h1.navigation {
+    text-align: center;
+    font-size: 48px;
+    }
+
+.navigation a {
+        float: left;
+        text-align: center;
+        padding: 10px;
+        color: rgb(151, 0, 0);
+    }
+.navigation a:hover {
+        background-color: grey;
+        color: black;
+    }
+.navigation a.active {
+        background-color: rgb(131, 0, 0);
+        color: white
+    }
+
+.centerbody{
+    text-align: center;
+}
+
+.container{
+    padding-top: 300px;
+}
+
+.content{
+    padding-top: 300px;
+}
