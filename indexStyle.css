@@ -30,17 +30,6 @@ h1{
     color: white
 }
 
-.centerbody {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-}
-
-.centerbody img {
-  margin-bottom: 20px;
-}
-
 h2{
     text-align: center;
     border: black;
