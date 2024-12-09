@@ -42,7 +42,7 @@ p {
         width: 100%; 
         line-height: 1.5; 
         padding-bottom: 5%; 
-        font-size: 5; /
+        font-size: 5px;
       }
 
 .body{
@@ -80,7 +80,6 @@ p {
   }
   
   #desc1, #desc2, #desc3, #desc4 {
-    text-align: flex;
     line-height: 30px;
     background-color: #E3E3E3;
     padding: 10px;
