@@ -29,7 +29,7 @@ h1{
     background-color: rgb(131, 0, 0);
     color: white
 }
-    
+
 h2{
     text-align: center;
     border: black;
@@ -43,14 +43,14 @@ p {
         line-height: 1.5; 
         padding-bottom: 5%; 
         font-size: 5; /
-} 
+      }
 
 .body{
         display: flex;
-        justify-content: center; 
-        align-items: center;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
 }
-    
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
