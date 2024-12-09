@@ -30,9 +30,10 @@ h1{
     color: white
 }
 
-img{
-    align-items: center; 
-}
+.body{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
     
 h2{
     text-align: center;
@@ -47,12 +48,7 @@ p {
         line-height: 1.5; 
         padding-bottom: 5%; 
         font-size: 5; /
-      }
-
-.body{
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
+      } 
 }
 
   .gallery {
