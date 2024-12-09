@@ -30,10 +30,11 @@ h1{
     color: white
 }
 
-.body{
+.centerbody{
         display: flex;
         justify-content: center; 
         align-items: center;
+}
     
 h2{
     text-align: center;
@@ -51,6 +52,11 @@ p {
       } 
 }
 
+.body{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    
   .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
