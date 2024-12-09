@@ -29,12 +29,6 @@ h1{
     background-color: rgb(131, 0, 0);
     color: white
 }
-
-.centerbody{
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-}
     
 h2{
     text-align: center;
