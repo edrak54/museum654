@@ -2,7 +2,10 @@ body{
     background-color: #FFFDDF;
     font-family: 'Garamond', serif;
 }
-
+h1{
+    text-align: center;
+    font-size: 48px;
+}
 h2{
     text-align: center;
     border: black;
