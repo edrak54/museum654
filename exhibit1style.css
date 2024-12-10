@@ -1,39 +1,33 @@
 body{
     background-color: #FFFDDF;
+    font-family: 'Garamond', serif;
 }
 
 h2{
     text-align: center;
     border: black;
-    font-family: 'Garamond', serif;
-    
 }
 .navigation {
-        border-bottom: solid rgb(131, 0, 0);
-        overflow: hidden;
-        font-family: 'Garamond', serif;
-        
-    }
-
-h1.navigation {
-    text-align: center;
-    font-size: 48px;
-    }
+    border-bottom: solid rgb(131, 0, 0);
+    overflow: hidden;
+}
 
 .navigation a {
-        float: left;
-        text-align: center;
-        padding: 10px;
-        color: rgb(151, 0, 0);
-    }
+    float: left;
+    text-align: center;
+    padding: 10px;
+    color: rgb(151, 0, 0);
+}
+
 .navigation a:hover {
-        background-color: grey;
-        color: black;
-    }
+    background-color: rgb(131, 0, 0);
+    color: white;
+}
+
 .navigation a.active {
-        background-color: rgb(131, 0, 0);
-        color: white
-    }
+    background-color: rgb(131, 0, 0);
+    color: white
+}
 
     .column {
         float: left;
