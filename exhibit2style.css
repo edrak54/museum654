@@ -48,6 +48,7 @@ h2{
     border-bottom:  double;
     padding-top: 20px;
     padding-bottom: 20px;
+    float: left;
 }
 #film1 h2, h3, p{
     font-family: 'Courier New', Courier, monospace;
@@ -78,6 +79,7 @@ h2{
     padding-bottom: 20px;
     right: 0%;
     text-align: right;
+    float: right;
 }
 #film2 h2, h3, p{
     font-family: 'Courier New', Courier, monospace;
@@ -96,12 +98,14 @@ h2{
     width: 1000px;
     line-height: 30px;
     margin-top: -190px;
-margin-left: 280px;}
+margin-left: 280px;
+text-align: right;}
 
 #film3{
     border-bottom:  double;
     padding-top: 20px;
     padding-bottom: 20px;
+    float: left;
 }
 #film3 h2, h3, p{
     font-family: 'Courier New', Courier, monospace;
